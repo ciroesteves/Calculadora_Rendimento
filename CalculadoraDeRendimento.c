@@ -44,10 +44,6 @@ void investimento(float parcela, int meses, float juros, int x, float total){
     printf("\nO total final do investimeto eh %.2f.", total);
 }
 
-void imprima(float parcela, int meses){
-    printf("%f e %d", parcela, meses);
-}
-
 int main(int argc, char *argv[]) {
 
     int x=1, opcao, meses;
@@ -75,7 +71,6 @@ int main(int argc, char *argv[]) {
             investimento(parcela,  meses,  juros,  x,  total);
             break;
         default:
-            imprima( parcela,  meses);
             printf("Esse valor nao esta correto.");
     }
 	return 0;
